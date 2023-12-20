@@ -1,0 +1,182 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'Nurofen';
+  src: local('Nurofen'), url('./fonts/NurofenText_Rg.otf') format('opentype'),
+    url('./fonts/NurofenText_Rg.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'NurofenBold';
+  src: local('NurofenBold'),
+    url('./fonts/NurofenText_Bd.otf') format('opentype'),
+    url('./fonts/NurofenText_Bd.woff2') format('woff2');
+}
+
+$regular: 'Nurofen', 'Montserrat', sans-serif;
+$bold: 'NurofenBold', 'Montserrat', sans-serif;
+$black: #243045;
+$green: #53b784;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin text {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+@mixin img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+#es-nurofen.es-nurofen {
+  font-family: $regular;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  color: $black;
+  background: #fff;
+  padding-bottom: 64px;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: $regular;
+    color: $black;
+  }
+
+  .es-kv {
+    padding-top: 10px;
+    background-color: $green;
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &__packshot {
+      @include img;
+      margin-top: -10px;
+      margin-bottom: 20px;
+    }
+
+    &__content-img {
+      @include img;
+    }
+
+    &__title {
+      max-width: 90%;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      font-family: $bold;
+      font-weight: bold;
+    }
+
+    &__disclaimer {
+      max-width: 90%;
+      margin: 0 auto;
+      font-size: 12px;
+      color: #000000;
+    }
+  }
+
+  .es-info {
+  }
+
+  .es-benefits {
+  }
+
+  .es-additional {
+  }
+
+  .es-action {
+  }
+
+  .es-cross {
+  }
+
+  .es-footer {
+  }
+
+  .es-disclaimer {
+  }
+
+  @media screen and (min-width: 330px) {
+  }
+
+  @media screen and (min-width: 576px) {
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 930px) {
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slidedown {
+  from {
+    opacity: 0;
+    transform: translateY(-32px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideright {
+  from {
+    opacity: 0.3;
+    transform: translateX(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideleft {
+  from {
+    opacity: 0.3;
+    transform: translateX(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
