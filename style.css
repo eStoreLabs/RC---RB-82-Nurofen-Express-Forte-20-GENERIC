@@ -366,12 +366,18 @@ body {
   #es-nurofen.es-nurofen .es-info {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     padding-left: 10px;
     padding-right: 10px;
   }
   #es-nurofen.es-nurofen .es-info__img {
     margin-bottom: 0;
+  }
+  #es-nurofen.es-nurofen .es-info__title {
+    max-width: 100%;
+  }
+  #es-nurofen.es-nurofen .es-info__disclaimer {
+    max-width: 100%;
   }
   #es-nurofen.es-nurofen .es-benefits__items {
     flex-direction: row;
@@ -386,9 +392,6 @@ body {
     justify-content: flex-start;
     position: relative;
   }
-  #es-nurofen.es-nurofen .es-benefits__item--3 {
-    margin-top: -30px;
-  }
   #es-nurofen.es-nurofen .es-benefits__item-img {
     max-width: 150px;
   }
@@ -396,6 +399,10 @@ body {
     margin-bottom: 20px;
   }
   #es-nurofen.es-nurofen .es-benefits__item-img--2 {
+    margin-bottom: 20px;
+  }
+  #es-nurofen.es-nurofen .es-benefits__item-img--3 {
+    max-height: 106px;
     margin-bottom: 20px;
   }
   #es-nurofen.es-nurofen .es-benefits__item-title {
@@ -410,6 +417,24 @@ body {
     z-index: 1;
     position: absolute;
     bottom: 10%;
+  }
+}
+@media screen and (min-width: 768px) {
+  #es-nurofen.es-nurofen .es-additional__item {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 50px;
+  }
+  #es-nurofen.es-nurofen .es-additional__item-img {
+    align-self: flex-end;
+    margin-right: -14%;
+    max-width: 200px;
   }
 }
 @media screen and (min-width: 930px) {
