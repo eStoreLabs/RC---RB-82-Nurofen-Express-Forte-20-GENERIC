@@ -198,7 +198,7 @@ body {
   max-width: 100%;
   display: block;
   margin: 0 auto;
-  max-width: 280px;
+  max-width: 200px;
 }
 #es-nurofen.es-nurofen .es-action {
   padding-top: 20px;
@@ -307,7 +307,7 @@ body {
   font-family: inherit;
   font-weight: inherit;
   display: block;
-  font-family: "NurofenBold", "Montserrat", sans-serif;
+  font-family: "Nurofen", "Montserrat", sans-serif;
   text-align: center;
 }
 @media screen and (min-width: 500px) {
@@ -418,8 +418,40 @@ body {
     position: absolute;
     bottom: 10%;
   }
-}
-@media screen and (min-width: 768px) {
+  #es-nurofen.es-nurofen .es-action {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  #es-nurofen.es-nurofen .es-action__title {
+    margin-top: 10px;
+  }
+  #es-nurofen.es-nurofen .es-action__content {
+    display: flex;
+    justify-content: center;
+  }
+  #es-nurofen.es-nurofen .es-action__img {
+    max-width: 350px;
+    margin-top: -50px;
+  }
+  #es-nurofen.es-nurofen .es-cross__title {
+    margin-top: 0;
+  }
+  #es-nurofen.es-nurofen .es-cross__items {
+    display: flex;
+    flex-direction: row;
+  }
+  #es-nurofen.es-nurofen .es-cross__item {
+    transition: all 0.3s ease-in-out;
+  }
+  #es-nurofen.es-nurofen .es-cross__item:hover {
+    transform: scale(1.1);
+  }
+  #es-nurofen.es-nurofen .es-cross__img {
+    max-width: 200px;
+  }
+  #es-nurofen.es-nurofen .es-cross__item-title {
+    font-size: 22px;
+  }
   #es-nurofen.es-nurofen .es-additional__item {
     display: flex;
     gap: 10px;
@@ -428,25 +460,86 @@ body {
     max-width: 90%;
     padding-top: 0;
     padding-bottom: 0;
-    border-top-right-radius: 25px;
+    margin-left: 10px;
+    border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
   }
   #es-nurofen.es-nurofen .es-additional__item-img {
     align-self: flex-end;
-    margin-right: -14%;
+    margin-right: -10%;
     max-width: 200px;
+  }
+  #es-nurofen.es-nurofen .es-footer__logo-group {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  #es-nurofen.es-nurofen .es-footer__item {
+    justify-content: flex-start;
+  }
+  #es-nurofen.es-nurofen .es-footer__logo-title {
+    max-width: 250px;
+  }
+  #es-nurofen.es-nurofen .es-footer__item-img--2 {
+    max-height: 128px;
+  }
+  #es-nurofen.es-nurofen .es-footer__disclaimer {
+    font-size: 28px;
+  }
+  #es-nurofen.es-nurofen .es-footer__disclaimer-title {
+    font-size: 35px;
+    font-weight: normal;
+  }
+}
+@media screen and (min-width: 768px) {
+  #es-nurofen.es-nurofen .es-cross__img {
+    max-width: 250px;
+  }
+  #es-nurofen.es-nurofen .es-footer {
+    padding-bottom: 10px;
+  }
+  #es-nurofen.es-nurofen .es-footer__logo-group {
+    margin-top: 10px;
+  }
+  #es-nurofen.es-nurofen .es-footer__item {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  #es-nurofen.es-nurofen .es-footer__logo-title {
+    margin-top: 20px;
+    max-width: 300px;
+    text-align: left;
+  }
+  #es-nurofen.es-nurofen .es-footer__disclaimer {
+    font-size: 30px;
+    padding: 20px 110px;
+    padding-bottom: 0;
   }
 }
 @media screen and (min-width: 930px) {
   #es-nurofen.es-nurofen .es-benefits__item {
     justify-content: flex-start;
     max-width: 250px;
+    transition: all 0.3s ease-in-out;
+  }
+  #es-nurofen.es-nurofen .es-benefits__item:hover {
+    transform: scale(1.1);
   }
   #es-nurofen.es-nurofen .es-benefits__item-img {
     max-width: 180px;
   }
   #es-nurofen.es-nurofen .es-benefits__item-title {
     min-height: 70px;
+  }
+  #es-nurofen.es-nurofen .es-action__content {
+    justify-content: space-around;
+  }
+  #es-nurofen.es-nurofen .es-action__text {
+    margin-top: 10px;
+    max-width: 270px;
+  }
+  #es-nurofen.es-nurofen .es-action__img {
+    max-width: 450px;
   }
 }
 
