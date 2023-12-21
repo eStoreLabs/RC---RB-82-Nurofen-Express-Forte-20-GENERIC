@@ -452,6 +452,9 @@ body {
   #es-nurofen.es-nurofen .es-cross__item-title {
     font-size: 22px;
   }
+  #es-nurofen.es-nurofen .es-additional__title {
+    margin-bottom: 10px;
+  }
   #es-nurofen.es-nurofen .es-additional__item {
     display: flex;
     gap: 10px;

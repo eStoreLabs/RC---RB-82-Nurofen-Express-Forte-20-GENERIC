@@ -507,6 +507,10 @@ body {
     }
 
     .es-additional {
+      &__title {
+        margin-bottom: 10px;
+      }
+
       &__item {
         display: flex;
         gap: 10px;
