@@ -82,7 +82,7 @@ body {
 
     &__packshot {
       @include img;
-      margin-top: -10px;
+      margin-top: -35px;
       margin-bottom: 20px;
       animation: slideright 0.5s ease-in-out;
     }
@@ -94,6 +94,7 @@ body {
 
     &__title {
       max-width: 90%;
+      font-size: 25px;
       margin: 0 auto;
       margin-bottom: 20px;
       font-family: $bold;
@@ -104,16 +105,18 @@ body {
     &__disclaimer {
       max-width: 90%;
       margin: 0 auto;
+      font-weight: bold;
       font-size: 12px;
       color: #000000;
       animation: slidedown 0.5s ease-in-out;
+      line-height: 1;
     }
   }
 
   .es-info {
     background-color: #efefef;
     padding-top: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
 
     &__img {
       @include img;
@@ -124,14 +127,16 @@ body {
     &__title {
       max-width: 90%;
       margin: 0 auto;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
       font-size: 18px;
+      line-height: 1.1;
     }
 
     &__disclaimer {
       max-width: 90%;
       margin: 0 auto;
       font-size: 12px;
+      font-weight: 700;
     }
   }
 
@@ -202,7 +207,8 @@ body {
 
     &__item-title {
       @include text;
-      font-family: $bold;
+      font-family: $regular;
+      font-weight: 700;
       font-size: 20px;
       margin-bottom: 10px;
     }
@@ -237,7 +243,7 @@ body {
   .es-cross {
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 10px;
+    padding-left: 20px;
     padding-right: 10px;
     background-color: $green;
 
@@ -306,6 +312,7 @@ body {
       padding-bottom: 10px;
       background-color: $green;
       text-align: center;
+      line-height: 1.2;
     }
 
     &__disclaimer-title {
@@ -371,13 +378,13 @@ body {
       }
 
       &__packshot {
-        max-width: 345px;
-        margin-left: -20px;
+        max-width: 330px;
+        margin-left: -10px;
       }
 
       &__title {
         max-width: 300px;
-        margin-left: 20px;
+        margin-left: 33px;
         font-size: 40px;
         line-height: 0.9;
       }
@@ -463,6 +470,7 @@ body {
     .es-action {
       padding-bottom: 10px;
       padding-top: 10px;
+      padding-left: 20px;
 
       &__title {
         margin-top: 10px;
@@ -594,6 +602,28 @@ body {
         padding-bottom: 0;
       }
     }
+    .es-kv {
+      position: relative;
+
+      &__disclaimer {
+        position: absolute;
+        bottom: 2%;
+        left: 4.4%;
+        max-width: 373px;
+      }
+    }
+
+  .es-kv__packshot {
+    margin-top: -60px;
+    margin-bottom: 36px;
+  }
+  .es-kv__title {
+    position: absolute;
+  }
+  .es-kv__title {
+    position: relative;
+    z-index: 1;
+  }
   }
 
   @media screen and (min-width: 930px) {
@@ -631,6 +661,63 @@ body {
         max-width: 450px;
       }
     }
+
+    .es-info__title {
+      margin-top: -40px;
+      margin-right: 55px;
+    }
+    .es-additional__item {
+      padding-left: 20px;
+    }
+    .es-additional__item-title {
+      margin-bottom: 5px;
+      font-size: 25px;
+    }
+    .es-additional__item-description {
+      font-size: 15.8px;
+    }
+    .es-footer,
+    .es-additional,
+    .es-benefits {
+      padding-left: 20px;
+    }
+    .es-footer__disclaimer {
+      margin-top: 30px;
+    }
+  }
+  .es-footer,
+  .es-additional,
+  .es-benefits,
+  .es-cross,
+  .es-action {
+    padding-left: 20px;
+  }
+
+  .es-footer__title,
+  .es-additional__title,
+  .es-benefits__title,
+  .es-cross__title,
+  .es-action__title {
+    padding-left: 10px;
+  }
+  .es-footer__disclaimer {
+    margin-top: 30px;
+  }
+  .es-info__img {
+    max-width: 343px;
+    margin-left: -35px;
+  }
+  .es-action__text {
+    margin-left: 10px;
+  }
+  .es-additional__item {
+    max-width: 91%;
+  }
+  .es-cross {
+    padding-bottom: 0;
+  }
+  .es-cross__items {
+    margin-top: -40px;
   }
 }
 
